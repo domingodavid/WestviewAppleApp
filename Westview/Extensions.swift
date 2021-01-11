@@ -25,12 +25,12 @@ struct commonColors {
 struct schedules {
     static func getSchedule(for day: String) -> [(String, String, String)] {
         switch day {
-        case "Monday", "Thursday":
-            return monThu
-        case "Tuesday", "Friday":
-            return tueFri
-        case "Wednesday":
-            return wed
+        case "Monday", "Wednesday":
+            return monWed
+        case "Tuesday", "Thursday":
+            return tueThur
+        case "Friday":
+            return fri
         case "finals 1":
             return finals1
         case "finals 2":
@@ -54,7 +54,7 @@ struct schedules {
         ("4", "10:35", "12:35")
     ]
     
-    static let monThu: [(String, String, String)] = [
+    static let monWed: [(String, String, String)] = [
         ("Period", "Start", "End"),
         ("1", "8:00", "9:20"),
         ("2", "9:30", "10:50"),
@@ -63,7 +63,7 @@ struct schedules {
         ("3", "12:10", "1:30"),
         ("4", "1:40", "3:00"),
         ]
-    static let tueFri: [(String, String, String)] = [
+    static let tueThur: [(String, String, String)] = [
         ("Period", "Start", "End"),
         ("1", "8:00", "9:20"),
         ("2", "9:30", "10:50"),
